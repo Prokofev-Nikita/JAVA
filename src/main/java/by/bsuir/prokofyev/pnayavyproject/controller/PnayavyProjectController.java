@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-class BinanceServerController {
+class PnayavyProjectController {
     @GetMapping("/hello")
     public String sayHello(@RequestParam(required = false) String name) {
         return name == null ? "You are noname, looser" : "58";
