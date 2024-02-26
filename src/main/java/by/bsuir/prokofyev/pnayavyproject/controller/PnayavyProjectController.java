@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 class PnayavyProjectController {
     @GetMapping(value = "/hello" , produces = "application/json")
     public String sayHello(@RequestParam(required = false) String name) {
-        return name == null ? "Null page" : "{\nCourse: 58\n}";
+        return name == null ? "Null page" : "58";
     }
 }
