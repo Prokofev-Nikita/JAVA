@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 public class InformationService {
 
     public String information() {
-        return "{\nCourse: 58\n}";
+        return "58";
     }
     public String informationError()
     {
