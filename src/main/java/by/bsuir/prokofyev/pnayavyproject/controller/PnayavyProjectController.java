@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 class PnayavyProjectController {
-    @GetMapping("/hello")
+    @GetMapping(value = "/hello" , produces = "application/json")
     public String sayHello(@RequestParam(required = false) String name) {
-        return name == null ? "You are noname, looser" : "58";
+        return name == null ? "Null page" : "58";
     }
 }
