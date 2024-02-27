@@ -15,6 +15,10 @@ class PnayavyProjectController {
 
     @GetMapping(value = "/hello" , produces = "application/json")
     public String sayHello(@RequestParam(required = false) String name) {
-        return !(name.equals("USDT"))  ? informationService.informationError() : informationService.information();
+        if (name == null)
+        {
+            return informationService.informationError();
+        }
+        return !(name.equals("USDT")) ? informationService.informationError() : informationService.information();
     }
 }
