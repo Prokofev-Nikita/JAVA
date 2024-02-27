@@ -1,13 +1,13 @@
-package by.bsuir.prokofyev.pnayavyproject;
+package by.bsuir.prokofyev.binanceproject;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PnayavyProjectApplication {
+public class BinanceProjectApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(PnayavyProjectApplication.class, args);
+        SpringApplication.run(BinanceProjectApplication.class, args);
     }
 
 }

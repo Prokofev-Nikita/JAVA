@@ -1,10 +1,10 @@
-package by.bsuir.prokofyev.pnayavyproject;
+package by.bsuir.prokofyev.binanceproject;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PnayavyProjectApplicationTests {
+class BinanceProjectApplicationTests {
 
     @Test
     void contextLoads() {

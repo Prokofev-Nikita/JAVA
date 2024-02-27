@@ -1,4 +1,4 @@
-package by.bsuir.prokofyev.pnayavyproject.service;
+package by.bsuir.prokofyev.binanceproject.service;
 
 import org.springframework.stereotype.Service;
 
@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 public class InformationService {
 
     public String information() {
-        return "{\ncourse: 58\n}";
+        return "{\"course\": 58}";
     }
     public String informationError()
     {
