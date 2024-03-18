@@ -8,9 +8,11 @@ import lombok.Data;
 @Entity
 public class Wallet {
     @Id
+    @GeneratedValue
     private long id;
     @ManyToOne
     User owner;
     @ManyToOne
     Cryptocurrency amount;
+    private double balance;
 }

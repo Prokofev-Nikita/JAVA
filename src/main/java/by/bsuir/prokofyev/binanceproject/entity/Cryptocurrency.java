@@ -7,6 +7,7 @@ import lombok.Data;
 @Entity
 public class Cryptocurrency {
     @Id
+    @GeneratedValue
     private long id;
     private String name;
     private double price;
