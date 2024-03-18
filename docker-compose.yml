@@ -1,0 +1,15 @@
+services:
+  app:
+    build: .
+    environment:
+      DB_URL: postgresql://postgres/crypto_info
+    ports:
+      - 8081:8080
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_DB: "crypto_info"
+      POSTGRES_USER: "p2p"
+      POSTGRES_PASSWORD: "arbitrage"
+    expose:
+      - 5432
