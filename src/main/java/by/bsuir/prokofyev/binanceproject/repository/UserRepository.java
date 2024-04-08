@@ -1,4 +1,4 @@
-package by.bsuir.prokofyev.binanceproject.api;
+package by.bsuir.prokofyev.binanceproject.repository;
 
 import by.bsuir.prokofyev.binanceproject.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -8,7 +8,7 @@ import org.springframework.data.rest.core.annotation.RestResource;
 
 import java.util.List;
 
-public interface UserCrud extends JpaRepository<User, Long> {
+public interface UserRepository extends JpaRepository<User, Long> {
 
     List<User> findAllByIdIn(@Param("ids") List<Long> ids);
 
