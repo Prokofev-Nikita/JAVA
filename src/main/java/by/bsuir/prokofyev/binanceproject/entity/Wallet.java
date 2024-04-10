@@ -1,7 +1,7 @@
 package by.bsuir.prokofyev.binanceproject.entity;
 
 
-import jakarta.persistence.*;
+import javax .persistence.*;
 import lombok.Data;
 
 @Data

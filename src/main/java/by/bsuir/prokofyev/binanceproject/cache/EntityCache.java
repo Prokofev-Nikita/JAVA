@@ -18,7 +18,7 @@ public class EntityCache<T> {
 
     public void put(Long key, T value) {
         if (cache.size() >= MAX)
-            cache.clear();
+            cache.remove(cache.keySet().iterator().next());
         cache.put(key, value);
     }
 
