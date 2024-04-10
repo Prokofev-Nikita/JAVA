@@ -15,6 +15,7 @@ public class Cryptocurrency {
     private double price;
 
     @ManyToMany
-    @JoinTable(name = "wallet", joinColumns = @JoinColumn(name = "amount_id"), inverseJoinColumns = @JoinColumn(name = "owner_id"))
+    @JoinTable(name = "wallet", joinColumns = @JoinColumn(name = "amount_id"),
+            inverseJoinColumns = @JoinColumn(name = "owner_id"))
     List<User> users;
 }
