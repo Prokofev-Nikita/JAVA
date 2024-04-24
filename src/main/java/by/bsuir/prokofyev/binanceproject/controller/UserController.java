@@ -1,4 +1,4 @@
-package by.bsuir.prokofyev.binanceproject.api.controller;
+package by.bsuir.prokofyev.binanceproject.controller;
 
 import by.bsuir.prokofyev.binanceproject.repository.UserRepository;
 import by.bsuir.prokofyev.binanceproject.cache.EntityCache;
