@@ -7,6 +7,15 @@ plugins {
     id 'org.sonarqube' version '4.4.1.3373'
 }
 
+test() {
+    useJUnitPlatform()
+    testLogging.showStandardStreams = true
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+    finalizedBy(jacocoTestReport)
+}
+
 jacocoTestReport {
     dependsOn test
     reports {
