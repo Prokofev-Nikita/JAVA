@@ -13,6 +13,8 @@ import org.mockito.junit.MockitoJUnitRunner;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 
@@ -58,5 +60,19 @@ public class UserControllerTest {
 
         Assert.assertEquals(HttpStatus.NOT_FOUND, response.getStatusCode());
         Assert.assertNull(response.getBody());
+    }
+
+    @Test
+    public void testBulkUpdateUsers() {
+        List<User> users = new ArrayList<>();
+        users.add(new User());
+        users.add(new User());
+
+        ResponseEntity<String> response = userController.bulkUpdateUsers(users);
+
+        Assert.assertEquals(HttpStatus.OK, response.getStatusCode());
+        Assert.assertEquals("Bulk operation completed successfully", response.getBody());
+
+        Mockito.verify(userRepository).saveAll(users);
     }
 }
