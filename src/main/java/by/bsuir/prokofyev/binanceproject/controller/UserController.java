@@ -1,5 +1,6 @@
 package by.bsuir.prokofyev.binanceproject.controller;
 
+import by.bsuir.prokofyev.binanceproject.counter.RequestStats;
 import by.bsuir.prokofyev.binanceproject.repository.UserRepository;
 import by.bsuir.prokofyev.binanceproject.cache.EntityCache;
 import by.bsuir.prokofyev.binanceproject.entity.User;
@@ -17,6 +18,7 @@ public class UserController {
     private final EntityCache<User> userCache;
 
     @GetMapping("/{id}")
+    @RequestStats
     public ResponseEntity<User> getUserById(@PathVariable Long id) {
         if (userCache.get(id).isEmpty()) userRepository.findById(id).ifPresent(user -> userCache.put(id, user));
         return userCache.get(id).map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
@@ -27,4 +29,5 @@ public class UserController {
         userRepository.saveAll(users);
         return ResponseEntity.ok("Bulk operation completed successfully");
     }
+
 }
