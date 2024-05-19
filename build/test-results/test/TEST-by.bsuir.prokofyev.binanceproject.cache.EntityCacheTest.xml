@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="by.bsuir.prokofyev.binanceproject.cache.EntityCacheTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-05-19T22:45:03" hostname="fedora" time="0.031">
+<testsuite name="by.bsuir.prokofyev.binanceproject.cache.EntityCacheTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-05-19T22:55:34" hostname="fedora" time="0.039">
   <properties/>
-  <testcase name="remove()" classname="by.bsuir.prokofyev.binanceproject.cache.EntityCacheTest" time="0.02"/>
+  <testcase name="remove()" classname="by.bsuir.prokofyev.binanceproject.cache.EntityCacheTest" time="0.03"/>
   <testcase name="get()" classname="by.bsuir.prokofyev.binanceproject.cache.EntityCacheTest" time="0.001"/>
-  <testcase name="put()" classname="by.bsuir.prokofyev.binanceproject.cache.EntityCacheTest" time="0.001"/>
+  <testcase name="put()" classname="by.bsuir.prokofyev.binanceproject.cache.EntityCacheTest" time="0.0"/>
   <testcase name="putMaxCapacity()" classname="by.bsuir.prokofyev.binanceproject.cache.EntityCacheTest" time="0.004"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

@@ -9,17 +9,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(&quot;/stats&quot;)
 
-public class RequestStatsController
-{
+public class RequestStatsController {
     private RequestCounterService requestCounterService;
 
-<span class="nc" id="L16">    public RequestStatsController(RequestCounterService requestCounterService) {</span>
-<span class="nc" id="L17">        this.requestCounterService = requestCounterService;</span>
-<span class="nc" id="L18">    }</span>
+<span class="nc" id="L15">    public RequestStatsController(RequestCounterService requestCounterService) {</span>
+<span class="nc" id="L16">        this.requestCounterService = requestCounterService;</span>
+<span class="nc" id="L17">    }</span>
 
     @GetMapping
     public ResponseEntity&lt;Integer&gt; getRequestStats() {
-<span class="nc" id="L22">        return ResponseEntity.ok(requestCounterService.getCount());</span>
+<span class="nc" id="L21">        return ResponseEntity.ok(requestCounterService.getCount());</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.9.202303310957</span></div></body></html>

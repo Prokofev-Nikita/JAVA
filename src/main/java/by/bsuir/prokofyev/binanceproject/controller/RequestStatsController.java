@@ -9,8 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/stats")
 
-public class RequestStatsController
-{
+public class RequestStatsController {
     private RequestCounterService requestCounterService;
 
     public RequestStatsController(RequestCounterService requestCounterService) {

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="by.bsuir.prokofyev.binanceproject.controller.UserControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-05-19T22:45:03" hostname="fedora" time="0.743">
+<testsuite name="by.bsuir.prokofyev.binanceproject.controller.UserControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-05-19T22:55:34" hostname="fedora" time="0.851">
   <properties/>
-  <testcase name="testGetUserByIdExistsInRepository()" classname="by.bsuir.prokofyev.binanceproject.controller.UserControllerTest" time="0.733"/>
-  <testcase name="testBulkUpdateUsers()" classname="by.bsuir.prokofyev.binanceproject.controller.UserControllerTest" time="0.001"/>
-  <testcase name="testGetUserByIdExistsInCache()" classname="by.bsuir.prokofyev.binanceproject.controller.UserControllerTest" time="0.003"/>
-  <testcase name="testGetUserByIdNotFound()" classname="by.bsuir.prokofyev.binanceproject.controller.UserControllerTest" time="0.003"/>
+  <testcase name="testGetUserByIdExistsInRepository()" classname="by.bsuir.prokofyev.binanceproject.controller.UserControllerTest" time="0.833"/>
+  <testcase name="testBulkUpdateUsers()" classname="by.bsuir.prokofyev.binanceproject.controller.UserControllerTest" time="0.002"/>
+  <testcase name="testGetUserByIdExistsInCache()" classname="by.bsuir.prokofyev.binanceproject.controller.UserControllerTest" time="0.006"/>
+  <testcase name="testGetUserByIdNotFound()" classname="by.bsuir.prokofyev.binanceproject.controller.UserControllerTest" time="0.005"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

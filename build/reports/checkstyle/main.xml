@@ -9,7 +9,6 @@
 <file name="/home/chill/JAVA/src/main/java/by/bsuir/prokofyev/binanceproject/controller/UserController.java">
 </file>
 <file name="/home/chill/JAVA/src/main/java/by/bsuir/prokofyev/binanceproject/controller/RequestStatsController.java">
-<error line="13" column="1" severity="error" message="&apos;{&apos; at column 1 should be on the previous line." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 </file>
 <file name="/home/chill/JAVA/src/main/java/by/bsuir/prokofyev/binanceproject/entity/Cryptocurrency.java">
 </file>
